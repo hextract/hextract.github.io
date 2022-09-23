@@ -11,27 +11,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white border-bottom border-dark fixed-top">
-    <div class="container">
-        <img src="static/favicon.ico" alt="" width="40" height="40">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Обо мне</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Мои проекты</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
 <main class="container">
-    <div class="row justify-content-center mt-large">
+    <div class="row mt-large">
         <div class="col-6 mt-medium">
             <h1 class="huge"><strong>Сиденко Олег</strong></h1>
             <div class="row">
@@ -71,9 +53,9 @@
             </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6 col-4 float-end">
             <div class="float-end">
-                <img src="static/photo.png" alt="Не загрузилось:(">
+                <img src="static/photo.png" class="img-fluid" alt="Не загрузилось:(">
             </div>
         </div>
         <hr class="mt-medium border border-1 border-dark opacity-100" id="about">
@@ -104,8 +86,32 @@
     <hr class="mt-medium border border-1 border-dark opacity-100" id="projects">
 
 
-    <div class="row mt-medium">
-        <h1 class="huge"><strong>Пройденные мной курсы:</strong></h1>
+    <div class="row  mt-medium">
+        <h1 class="huge"><strong>Обо мне:</strong></h1>
+        <p class="fs-2">Мне 16 лет. Живу в Москве, учусь в 11 IT классе Школы 1571. Люблю
+            программировать и играть в компьютерные игры, иногда читаю. <br> Любимая игра -
+            Hearthstone. Любимая книга - Макс Фрай </p>
+        <div class="col-3">
+            <a href="https://github.com/h4x4d" target="_blank">
+                <svg viewBox="0 0 315 70" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_6_45)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M315 0H20L0 20V70H295L315 50V0Z"
+                              fill="black"></path>
+                        <path d="M127.519 41.242C131.171 41.242 132.623 39.24 133.063 37.898V41H135.065V33.96C135.065 33.102 134.625 32.662 133.679 32.662H127.013V34.202H133.019C133.129 37.656 131.325 39.526 127.915 39.526C124.021 39.526 122.569 36.776 122.569 33.432C122.569 29.56 124.461 26.964 128.003 26.964C130.665 26.964 132.359 28.46 132.711 31.034H134.735C134.229 27.448 131.699 25.248 127.937 25.248C123.251 25.248 120.545 28.504 120.545 33.388C120.545 37.854 122.811 41.242 127.519 41.242ZM137.579 41H145.477V39.328H142.419V31.342C142.419 30.44 141.979 30.066 141.187 30.066H138.349V31.738H140.615V39.328H137.579V41ZM139.735 26.722C139.735 27.58 140.417 28.196 141.275 28.196C142.155 28.196 142.859 27.58 142.859 26.722C142.859 25.864 142.155 25.248 141.275 25.248C140.417 25.248 139.735 25.864 139.735 26.722ZM153.913 39.328L150.041 39.35V31.738H153.473V30.066H150.041V26.7L148.083 27.294V30.066H145.663V31.738H148.083V39.46C148.083 40.516 148.589 41 149.623 41H153.913V39.328ZM156.387 41H158.345V36.358C158.345 33.41 159.819 31.518 162.195 31.518C164.065 31.518 164.923 32.398 164.923 34.642V41H166.881V34.422C166.881 31.474 165.385 29.846 162.877 29.846C160.457 29.846 158.939 31.078 158.345 33.036V24.83H156.387V41ZM173.556 41.22C175.954 41.22 177.494 39.988 178.088 38.008V41H180.024V30.066H178.088V34.708C178.088 37.656 176.614 39.548 174.216 39.548C172.346 39.548 171.51 38.668 171.51 36.424V30.066H169.53V36.622C169.53 39.57 171.026 41.22 173.556 41.22ZM182.834 41H184.792V38.316C185.562 40.054 187.124 41.22 189.478 41.22C192.624 41.22 194.604 38.844 194.604 35.522C194.604 32.2 192.624 29.846 189.478 29.846C187.058 29.846 185.518 31.056 184.792 32.706V24.83H182.834V41ZM184.836 35.522C184.836 32.86 186.706 31.518 188.84 31.518C190.974 31.518 192.668 32.772 192.668 35.522C192.668 38.272 190.974 39.548 188.84 39.548C186.706 39.548 184.836 38.228 184.836 35.522Z"
+                              fill="white"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+    <hr class="mt-medium border border-1 border-dark opacity-100" id="projects">
+
+
+    <div class="row mt-small">
+        <h1 class="huge"><strong>Образование:</strong></h1>
         <ul class="list-group list-group-flush">
             <li class="list-group-item fs-4">
                 <strong><a
@@ -132,13 +138,14 @@
             </li>
         </ul>
     </div>
+    <hr class="mt-small border border-1 border-dark opacity-100" id="projects">
 
     <div class="row mt-small">
         <h1 class="huge"><strong>Разработанные проекты:</strong></h1>
         <ul class="list-group list-group-flush">
             <li class="list-group-item fs-4">
                 <strong><a
-                        href="https://lyceum.yandex.ru/certificate/check/?certNumber=220242426&lastName=%D0%A1%D0%B8%D0%B4%D0%B5%D0%BD%D0%BA%D0%BE"
+                        href="https://github.com/h4x4d/FilmFinder"
                         target="_blank" class="text-black">FilmFinder</a></strong>
                 - проект для Олимпиады “Шаг в Будущее: Инженерное дело” (победитель).
                 <br>
@@ -160,7 +167,7 @@
             </li>
             <li class="list-group-item fs-4">
                 <strong><a
-                        href="https://lyceum.yandex.ru/certificate/check/?certNumber=220242426&lastName=%D0%A1%D0%B8%D0%B4%D0%B5%D0%BD%D0%BA%D0%BE"
+                        href="https://github.com/h4x4d/DBrowser"
                         target="_blank" class="text-black">DBrowser</a></strong>
                 - проект для Лицея Академии Яндекса.
                 <br>
@@ -170,7 +177,7 @@
             </li>
             <li class="list-group-item fs-4">
                 <strong><a
-                        href="https://lyceum.yandex.ru/certificate/check/?certNumber=220242426&lastName=%D0%A1%D0%B8%D0%B4%D0%B5%D0%BD%D0%BA%D0%BE"
+                        href="https://github.com/h4x4d/Flask-Eisenhower-Matrix"
                         target="_blank" class="text-black">Eisenhower-Matrix</a></strong>
                 - проект для Лицея Академии Яндекса.
                 <br>
@@ -205,6 +212,20 @@
 
 </main>
 
+<div class="container fs-3">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">Сиденко Олег</p>
+
+        <ul class="nav col-md-5 justify-content-end">
+            <li class="nav-item">Github: <a href="https://github.com/h4x4d"
+                                            class=" px-2 text-muted">h4x4d</a></li>
+            <li class="nav-item"><a href="mailto:sidenkoleg@gmail.com" class="px-2 text-muted">sidenkoleg@gmail.com</a>
+            </li>
+            <li class="nav-item">Telegram<a href="https://t.me/h4x4d"
+                                            class="px-2 text-muted">@h4x4d</a></li>
+        </ul>
+    </footer>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
