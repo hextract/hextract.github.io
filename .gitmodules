@@ -1,0 +1,3 @@
+[submodule "mesto-project-bootcamp"]
+	path = mesto-project-bootcamp
+	url = git@github.com:h4x4d/mesto-project-bootcamp.git
