@@ -1,6 +1,6 @@
 let postRequestUrl = 'https://h4x4dtg.pythonanywhere.com/send';
 
-const emailRegexp = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+const emailRegexp = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 
 let contactOpenButton = document.querySelector('.contact__button');
 let contactPopup = document.querySelector('.contact-popup');
@@ -33,7 +33,7 @@ async function sendData(theme, contact){
     return json['success'];
 }
 
-contactOpenButton.addEventListener('click', function (event) {
+contactOpenButton.addEventListener('click', function () {
     console.log(contactPopup)
     contactPopup.classList.add('contact-popup_visible')
     contactPopup.classList.add('contact-popup_opened')
@@ -61,58 +61,59 @@ contactForm.addEventListener('submit', async function (event) {
 
     if (contactValues.has(contact) && themeValues.has(theme)) {
         contactAlertField.innerText = 'you have already sent this request';
-        contactAlertField.classList.add('contact-popup__alert_type_error')
+        contactAlertField.classList.add('contact-popup__alert_type_error');
         return;
     }
 
     if (10 >= theme.length) {
         contactAlertField.innerText = 'theme must be longer than 10 symbols';
-        contactAlertField.classList.add('contact-popup__alert_type_error')
+        contactAlertField.classList.add('contact-popup__alert_type_error');
         return;
     }
     if (5 >= contact.length) {
         contactAlertField.innerText = 'contact must be longer than 5 symbols';
-        contactAlertField.classList.add('contact-popup__alert_type_error')
+        contactAlertField.classList.add('contact-popup__alert_type_error');
         return;
     }
 
     if (contact.indexOf('@') !== -1) {
         if (!contact.match(emailRegexp)) {
             contactAlertField.innerText = 'email you provided is invalid';
-            contactAlertField.classList.add('contact-popup__alert_type_error')
-            return
+            contactAlertField.classList.add('contact-popup__alert_type_error');
+            return;
         }
     }
 
     if (contact[0] === '+' || contact[0] === '8') {
         if (!contact.slice(1).match(/^\d+$/)) {
             contactAlertField.innerText = 'dont use any non-digit symbols while writing phone';
-            contactAlertField.classList.add('contact-popup__alert_type_error')
-            return
+            contactAlertField.classList.add('contact-popup__alert_type_error');
+            return;
         }
     }
 
 
-    contactAlertField.classList.remove('contact-popup__alert_type_error')
+    contactAlertField.classList.remove('contact-popup__alert_type_error');
 
     contactSendButton.disabled = contactThemeField.disabled = contactContactField.disabled = true;
 
     contactAlertField.innerText = 'sending...';
-    contactAlertField.classList.add('contact-popup__alert_type_warning')
+    contactAlertField.classList.add('contact-popup__alert_type_warning');
 
     // await sleep(1000); // use this if form is sent too fast
 
     const response = await sendData(theme, contact);
-    contactAlertField.classList.remove('contact-popup__alert_type_warning')
+    contactAlertField.classList.remove('contact-popup__alert_type_warning');
     if (response) {
         contactAlertField.innerText = 'successfully send';
-        contactAlertField.classList.add('contact-popup__alert_type_success')
+        contactAlertField.classList.add('contact-popup__alert_type_success');
         contactValues.add(contact);
         themeValues.add(theme);
     } else {
         contactAlertField.innerText = 'unexpected error while sending form';
-        contactAlertField.classList.add('contact-popup__alert_type_error')
+        contactAlertField.classList.add('contact-popup__alert_type_error');
     }
+    contactThemeField.value = contactContactField.value = '';
 
     contactSendButton.disabled =  contactThemeField.disabled = contactContactField.disabled = false;
 
