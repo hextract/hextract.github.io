@@ -1,38 +1,258 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HEX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title autocapitalize="none">h4x4d</title>
+
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="pages/index.css">
 </head>
 <body>
+<div class="page">
+    <header class="header">
+        <a class="header__link" href="#about">about</a>
+        <a class="header__link" href="#skills">skills</a>
+        <a class="header__link" href="#projects">projects</a>
+        <a class="header__link" href="#experience">experience</a>
+    </header>
 
-<div class="container fs-3">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-bottom">
-        <p class="col-md-4 mb-0 text-muted">H4X4D</p>
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close-button" type="button"></button>
+            <button class="popup__side-button popup__side-button_side_left" type="button"></button>
+            <img src="media/popup/1.jpg" alt="image not loaded:(" class="popup__image">
+            <button class="popup__side-button popup__side-button_side_right" type="button"></button>
+        </div>
+    </div>
 
-        <ul class="nav col-md-4 justify-content-end ">
-            <li class="nav-item">Github:<a href="https://github.com/h4x4d"
-                                            class="px-2 text-muted">@h4x4d</a>
-            </li>
-            <li class="nav-item"><a href="mailto:h4x4d@yandex.ru"
-                                    class="px-2 text-muted">h4x4d@yandex.ru</a>
-            </li>
-            <li class="nav-item">Telegram:<a href="https://t.me/h4x4d"
-                                             class="px-2 text-muted">@h4x4d</a>
-            </li>
-        </ul>
-    </footer>
+    <div class="contact-popup">
+        <div class="contact-popup__container">
+            <button class="contact-popup__close-button" type="button"></button>
+            <h3 class="contact-popup__head-text">contact:</h3>
+            <form class="contact-form">
+                <div class="contact-popup__alert"></div>
+                <input type="text" name="theme" placeholder="theme (shortly)" class="contact-popup__input contact-popup__theme">
+                <input type="text" name="contact" placeholder="your contact (any)" class="contact-popup__input contact-popup__contact">
+                <button class="contact-popup__save-button" type="submit">
+                    send
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="root-container">
+        <main class="content">
+            <section class="cover">
+                <div class="cover__text-container">
+                    <p class="cover__description cover__description_name_before">hi, my name is</p>
+                    <h1 class="cover__name">Sidenko Oleg</h1>
+                    <p class="cover__description cover__description_name_after">and i am 18 years old developer</p>
+                    <div class="cover__button-container">
+                        <a class="cover__main-button" href="#contact">
+                            contact
+                        </a>
+                        <p class="cover__text">
+                            or <a class="cover__second-button" href="#about">read more about me</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="cover__image-container">
+                    <img src="media/cover/main-image.png" alt="No avatar:(" class="cover__image">
+                </div>
+            </section>
+
+            <div class="about">
+                <a class="anchor" id="about"></a>
+                <h2 class="about__head">about:</h2>
+                <ul class="about__text">
+                    <li>living in Moscow</li>
+                    <li>studying in MIPT HSSE 27’ (<b class="about__counter">test</b> days left)</li>
+                    <li>interested in backend developing</li>
+                    <li>hobbies - games/music</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <div class="skills__container">
+                    <a class="anchor" id="skills"></a>
+                    <h2 class="skills__head skills__head_target_skills">skills:</h2>
+                    <ul class="skills__collapse-list">
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                C++
+                            </a>
+                            <p class="skills__description">
+                                learned C++ on MIPT course
+                            </p>
+                        </li>
+
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                Python
+                            </a>
+                            <p class="skills__description">
+                                learned basic Python in Yandex lyceum <br>
+                                learned Django in Yandex Lyceum intensive <br>
+                                learned Python QA in Ozon Route 256 course
+                            </p>
+                        </li>
+
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                QA
+                            </a>
+                            <p class="skills__description">
+                                learned QA on Ozon Route 256 course
+                            </p>
+                        </li>
+
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                Web
+                            </a>
+                            <p class="skills__description">
+                                learned design basics in MGOK<br>
+                                learned basic html/css/js on MIPT course
+                            </p>
+                        </li>
+
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                other...
+                            </a>
+                            <p class="skills__description">
+                                learned SQL on MIPT course<br>
+                                know how to write CI/CD on Gitlab/Github<br>
+                                know how to use/write Docker and Docker Compose scripts
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills__container-projects">
+                    <a class="anchor" id="projects"></a>
+                    <h2 class="skills__head skills__head_target_projects">projects:</h2>
+                    <ul class="skills__collapse-list skills__collapse-list_right">
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                UniChoose
+                            </a>
+                            <p class="skills__description">
+                                service to find university you like using "tinder" system
+                                <br>
+                                stack: python, django, postgres, annoy
+                                <br>
+                                <a class="skills__link" href="https://github.com/h4x4d/UniChoose">github</a>
+                            </p>
+                        </li>
+
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                DeckView
+                            </a>
+                            <p class="skills__description">
+                                bot picture-generator of hearthstone deck codes<br>
+                                now version for discord is the most popular
+                                <br>
+                                stack: python, vkwave/discordpy/aiogram, Pillow, grequests
+                                <br>
+                                <a class="skills__link" href="https://github.com/h4x4d/HearthstoneDeckViewDS">github</a>
+                            </p>
+                        </li>
+
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                FilmFinder
+                            </a>
+                            <p class="skills__description">
+                                project for school project olympiad "step in future"<br>
+                                allows to full-text search in base of films<br>
+                                supports indistinct search
+                                <br>
+                                stack: python, flask, sqlite
+                                <br>
+                                <a class="skills__link" href="https://github.com/h4x4d/FilmFinder">github</a>
+                            </p>
+                        </li>
+
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                DBrowser
+                            </a>
+                            <p class="skills__description">
+                                project for yandex lyceum to train pyqt skills<br>
+                                allows to edit/create/delete sqlite tables
+                                <br>
+                                stack: python, pyqt, sqlite
+                                <br>
+                                <a class="skills__link" href="https://github.com/h4x4d/DBrowser">github</a>
+                            </p>
+                        </li>
+
+                        <li class="skills__list-item">
+                            <a class="skills__section">
+                                other...
+                            </a>
+                            <p class="skills__description">
+                                i have many different project which you can check on my <a class="skills__link"
+                                                                                           href="https://github.com/h4x4d">github</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience">
+                <a class="anchor" id="experience"></a>
+                <h2 class="experience__head">experience:</h2>
+                <p class="experience__text">
+                    currently no relevant experience in IT companies,<br>
+                    but i worked in a team on some projects, like UniChoose,<br>
+                    with mentors from Yandex, Ozon, etc...
+                </p>
+            </div>
+            <div class="contact">
+                <div class="contact__contacts">
+                    <a class="anchor" id="contact"></a>
+                    <h2 class="contact__head">contact:</h2>
+                    <ul class="contact__list">
+                        <li>
+                            <img alt="mail icon" src="media/contact/github.svg" class="contact__icon">
+                            <a class="contact__link" href="https://github.com/h4x4d">github</a>
+                        </li>
+                        <li>
+                            <img alt="mail icon" src="media/contact/telegram.svg" class="contact__icon">
+                            <a class="contact__link" href="https://t.me/h4x4d">telegram</a>
+                        </li>
+                        <li>
+                            <img alt="mail icon" src="media/contact/mail.svg" class="contact__icon contact__icon_hovering">
+                            <a class="contact__link" href="mailto:sidenkoleg@gmail.com">mail</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="contact__button">
+                    leave request
+                </button>
+            </div>
+        </main>
+
+        <div class="notify">
+            <button class="notify__close-button" type="button"></button>
+            it was cookies alert, but i have no cookies:(
+        </div>
+
+        <footer class="footer">
+            <p class="footer__text">
+                © 2024 h4x4d
+            </p>
+        </footer>
+    </div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-
+<script src="blocks/skills/__section/skills__section.js"></script>
+<script src="blocks/header/header.js"></script>
+<script src="blocks/about/about.js"></script>
+<script src="blocks/popup/popup.js"></script>
+<script src="blocks/contact-popup/contact-popup.js"></script>
+<script src="blocks/notify/notify.js" type="module"></script>
 </body>
 </html>
