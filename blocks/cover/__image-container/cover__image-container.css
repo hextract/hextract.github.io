@@ -1,0 +1,10 @@
+.cover__image-container {
+    margin: auto 0 auto auto;
+    overflow:hidden;
+}
+
+@media screen and (max-width: 1100px) {
+    .cover__image-container {
+        margin: auto auto 40px auto;
+    }
+}

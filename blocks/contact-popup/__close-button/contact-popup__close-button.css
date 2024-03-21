@@ -1,0 +1,33 @@
+.contact-popup__close-button {
+    border: none;
+
+    background-size: 100% 100%;
+    background-color: transparent;
+    background-image: url(../../../media/popup/close.svg);
+
+    padding: 0;
+
+    width: 32px;
+    height: 32px;
+
+    right: -40px;
+    top: -40px;
+
+
+    position: absolute;
+}
+
+@media screen and (max-width: 550px) {
+    .contact-popup__close-button {
+        right: 0;
+        top: -35px;
+
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.contact-popup__close-button:hover {
+    opacity: 60%;
+    cursor: pointer;
+}

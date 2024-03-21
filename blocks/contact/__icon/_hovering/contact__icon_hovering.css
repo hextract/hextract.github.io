@@ -1,0 +1,8 @@
+.contact__icon_hovering {
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+.contact__icon_hovering:hover {
+    transform: rotate(360deg);
+}

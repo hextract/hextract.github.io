@@ -1,0 +1,4 @@
+.popup__side-button_side_left {
+    left: 0;
+    background-image: url(../../../../media/popup/left-arrow.svg);
+}

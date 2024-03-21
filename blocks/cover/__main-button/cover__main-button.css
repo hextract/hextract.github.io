@@ -1,0 +1,24 @@
+.cover__main-button {
+    max-width: 200px;
+    margin: 0 10px 0 0;
+
+    padding: 15px 70px;
+    text-decoration: none;
+
+    background-color: transparent;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    color: #EAEAEA;
+
+    text-align: center;
+}
+
+.cover__main-button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 350px) {
+    .cover__main-button {
+        margin: 0 0 10px 0;
+    }
+}

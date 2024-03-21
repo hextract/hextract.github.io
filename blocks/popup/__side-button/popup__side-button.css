@@ -1,0 +1,27 @@
+.popup__side-button {
+    border: none;
+
+    background-size: 100% 100%;
+    background-color: transparent;
+
+    top: 0;
+    position: absolute;
+    width: 5vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+@media (any-pointer: fine) or (any-pointer: coarse) {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.popup__side-button:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .popup__side-button {
+        width: 15vw;
+    }
+}

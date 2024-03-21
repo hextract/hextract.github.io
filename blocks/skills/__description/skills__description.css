@@ -1,0 +1,10 @@
+.skills__description {
+    display: none;
+}
+
+.skills__description::before {
+    content: '/ ';
+}
+.skills__description::after {
+    content: ' /';
+}

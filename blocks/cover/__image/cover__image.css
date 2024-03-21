@@ -1,0 +1,13 @@
+.cover__image {
+    width: 35vw;
+    height: 35vw;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+    .cover__image {
+        width: 100%;
+        height: 100%;
+    }
+}

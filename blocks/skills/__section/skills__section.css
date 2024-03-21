@@ -1,0 +1,12 @@
+.skills__section {
+    cursor: pointer;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.skills__section:before {
+    content: attr(before-content);
+}
+
+.skills__section:after {
+    content: attr(after-content);
+}
