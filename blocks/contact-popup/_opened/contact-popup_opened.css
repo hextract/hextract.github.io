@@ -1,7 +1,4 @@
 .contact-popup_opened {
     opacity: 1;
-}
-
-.contact-popup_visible {
     visibility: visible;
 }

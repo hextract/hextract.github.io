@@ -15,10 +15,6 @@ let imageList = [
 ]
 let currentImage = 0;
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 function reloadButtons() {
     leftButton.classList.remove('popup__button_hide');
     rightButton.classList.remove('popup__button_hide');
@@ -37,7 +33,6 @@ function updateImage() {
 
 
 openButton.addEventListener('click', function (event) {
-    popup.classList.add('popup_visible')
     popup.classList.add('popup_opened')
     currentImage = 0;
     document.querySelector('body').classList.add('no_overflow');
@@ -48,8 +43,6 @@ openButton.addEventListener('click', function (event) {
 
 closeButton.addEventListener('click', async function () {
     popup.classList.remove('popup_opened')
-    await sleep(200);
-    popup.classList.remove('popup_visible')
     document.querySelector('body').classList.remove('no_overflow')
 })
 

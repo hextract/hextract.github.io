@@ -34,8 +34,6 @@ async function sendData(theme, contact){
 }
 
 contactOpenButton.addEventListener('click', function () {
-    console.log(contactPopup)
-    contactPopup.classList.add('contact-popup_visible')
     contactPopup.classList.add('contact-popup_opened')
     document.querySelector('body').classList.add('no_overflow');
 
@@ -44,8 +42,6 @@ contactOpenButton.addEventListener('click', function () {
 
 contactCloseButton.addEventListener('click', async function () {
     contactPopup.classList.remove('contact-popup_opened')
-    await sleep(200);
-    contactPopup.classList.remove('contact-popup_visible')
 
     contactAlertField.classList.remove('contact-popup__alert_type_error')
     contactAlertField.classList.remove('contact-popup__alert_type_warning')

@@ -1,7 +1,4 @@
 .popup_opened {
-    opacity: 1;
-}
-
-.popup_visible {
     visibility: visible;
+    opacity: 1;
 }
