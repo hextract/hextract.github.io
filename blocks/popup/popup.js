@@ -32,10 +32,10 @@ function updateImage() {
 }
 
 
-openButton.addEventListener('click', function (event) {
+openButton.addEventListener('click', function () {
     popup.classList.add('popup_opened')
     currentImage = 0;
-    document.querySelector('body').classList.add('no_overflow');
+    document.querySelector('body').classList.add('page_overflow_no');
 
     reloadButtons();
     updateImage();
@@ -43,7 +43,7 @@ openButton.addEventListener('click', function (event) {
 
 closeButton.addEventListener('click', async function () {
     popup.classList.remove('popup_opened')
-    document.querySelector('body').classList.remove('no_overflow')
+    document.querySelector('body').classList.remove('page_overflow_no')
 })
 
 leftButton.addEventListener('click', function () {

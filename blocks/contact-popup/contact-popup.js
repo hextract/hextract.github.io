@@ -35,7 +35,7 @@ async function sendData(theme, contact){
 
 contactOpenButton.addEventListener('click', function () {
     contactPopup.classList.add('contact-popup_opened')
-    document.querySelector('body').classList.add('no_overflow');
+    document.querySelector('body').classList.add('page_overflow_no');
 
     contactSendButton.disabled =  contactThemeField.disabled = contactContactField.disabled = false;
 })
@@ -47,7 +47,7 @@ contactCloseButton.addEventListener('click', async function () {
     contactAlertField.classList.remove('contact-popup__alert_type_warning')
     contactAlertField.classList.remove('contact-popup__alert_type_success')
 
-    document.querySelector('body').classList.remove('no_overflow')
+    document.querySelector('body').classList.remove('page_overflow_no')
 })
 
 contactForm.addEventListener('submit', async function (event) {
