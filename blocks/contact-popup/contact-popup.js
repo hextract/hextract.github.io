@@ -55,6 +55,10 @@ contactForm.addEventListener('submit', async function (event) {
     let theme = contactThemeField.value;
     let contact = contactContactField.value;
 
+    while (contact.indexOf('  ') > -1) {
+        contact = contact.replace('  ', ' ')
+    }
+
     if (contactValues.has(contact) && themeValues.has(theme)) {
         contactAlertField.innerText = 'you have already sent this request';
         contactAlertField.classList.add('contact-popup__alert_type_error');
