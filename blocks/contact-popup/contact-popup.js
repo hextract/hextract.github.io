@@ -86,6 +86,11 @@ contactForm.addEventListener('submit', async function (event) {
             contactAlertField.classList.add('contact-popup__alert_type_error');
             return;
         }
+        if (contact.length < 10) {
+            contactAlertField.innerText = 'your phone is too small';
+            contactAlertField.classList.add('contact-popup__alert_type_error');
+            return;
+        }
     }
 
 
