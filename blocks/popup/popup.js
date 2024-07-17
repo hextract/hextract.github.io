@@ -7,7 +7,6 @@ let leftButton = document.querySelector('.popup__side-button_side_left');
 let rightButton = document.querySelector('.popup__side-button_side_right');
 
 
-
 let imageList = [
     'media/popup/1.jpg',
     'media/popup/2.jpg',

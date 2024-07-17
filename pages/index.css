@@ -31,7 +31,6 @@
 @import url("../blocks/cover/__second-button/cover__second-button.css");
 @import url("../blocks/cover/__button-container/cover__button-container.css");
 
-
 @import url("../blocks/about/about.css");
 @import url("../blocks/about/__text/about__text.css");
 @import url("../blocks/about/__head/about__head.css");
@@ -51,24 +50,9 @@
 @import url("../blocks/skills/__description/_active/skills__description_active.css");
 @import url("../blocks/skills/__list-item/skills__list-item.css");
 
-
 @import url("../blocks/experience/experience.css");
 @import url("../blocks/experience/__text/experience__text.css");
 @import url("../blocks/experience/__head/experience__head.css");
-
-@import url("../blocks/contact-popup/contact-popup.css");
-@import url("../blocks/contact-popup/_opened/contact-popup_opened.css");
-@import url("../blocks/contact-popup/__head-text/contact-popup__head-text.css");
-@import url("../blocks/contact-popup/__close-button/contact-popup__close-button.css");
-@import url("../blocks/contact-popup/__container/contact-popup__container.css");
-@import url("../blocks/contact-popup/__head-text/contact-popup__head-text.css");
-@import url("../blocks/contact-popup/__save-button/contact-popup__save-button.css");
-@import url("../blocks/contact-popup/__input/contact-popup__input.css");
-@import url("../blocks/contact-popup/__alert/contact-popup__alert.css");
-@import url("../blocks/contact-popup/__alert/_type/contact-popup__alert_type_success.css");
-@import url("../blocks/contact-popup/__alert/_type/contact-popup__alert_type_error.css");
-@import url("../blocks/contact-popup/__alert/_type/contact-popup__alert_type_warning.css");
-
 
 @import url("../blocks/contact/contact.css");
 @import url("../blocks/contact/__link/contact__link.css");
@@ -76,15 +60,10 @@
 @import url("../blocks/contact/__list/contact__list.css");
 @import url("../blocks/contact/__head/contact__head.css");
 @import url("../blocks/contact/__button/contact__button.css");
+@import url("../blocks/contact/__resume/contact__resume.css");
 @import url("../blocks/contact/__icon/_hovering/contact__icon_hovering.css");
 
 @import url("../blocks/anchor/anchor.css");
-
-@import url("../blocks/notify/notify.css");
-@import url("../blocks/notify/__button/notify__button.css");
-@import url("../blocks/notify/_shown/notify_shown.css");
-@import url("../blocks/notify/__close-button/notify__close-button.css");
-
 
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__text/footer__text.css");

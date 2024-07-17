@@ -3,28 +3,28 @@
 <head>
     <title autocapitalize="none">h4x4d</title>
 
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="pages/index.css">
+    <link href="vendor/normalize.css" rel="stylesheet">
+    <link href="pages/index.css" rel="stylesheet">
 
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="h4x4d (Sidenko Oleg) personal site">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="h4x4d (Sidenko Oleg) personal site" name="description">
 
 
-    <meta name="og:title" content="h4x4d">
-    <meta name="og:description" content="h4x4d (Sidenko Oleg) personal site">
-    <meta name="og:image" content="media/cover/main-image.webp">
+    <meta content="h4x4d" name="og:title">
+    <meta content="h4x4d (Sidenko Oleg) personal site" name="og:description">
+    <meta content="media/cover/main-image.webp" name="og:image">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/media/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/media/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/media/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-config" content="/media/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link href="/media/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/media/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/media/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/media/favicon/site.webmanifest" rel="manifest">
+    <link color="#5bbad5" href="/media/favicon/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="/media/favicon/favicon.ico" rel="shortcut icon">
+    <meta content="#2b5797" name="msapplication-TileColor">
+    <meta content="/media/favicon/browserconfig.xml" name="msapplication-config">
+    <meta content="#ffffff" name="theme-color">
 
 </head>
 <body>
@@ -40,27 +40,8 @@
         <div class="popup__container">
             <button class="popup__close-button" type="button"></button>
             <button class="popup__side-button popup__side-button_side_left" type="button"></button>
-            <img src="media/popup/1.jpg" alt="image not loaded:(" class="popup__image">
+            <img alt="image not loaded:(" class="popup__image" src="media/popup/1.jpg">
             <button class="popup__side-button popup__side-button_side_right" type="button"></button>
-        </div>
-    </div>
-
-    <div class="contact-popup">
-        <div class="contact-popup__container">
-            <button class="contact-popup__close-button" type="button"></button>
-            <h3 class="contact-popup__head-text">contact:</h3>
-            <form class="contact-form">
-                <div class="contact-popup__alert"></div>
-                <label>
-                    <input type="text" name="theme" placeholder="theme (shortly)" class="contact-popup__input contact-popup__theme">
-                </label>
-                <label>
-                    <input type="text" name="contact" placeholder="your contact (any)" class="contact-popup__input contact-popup__contact">
-                </label>
-                <button class="contact-popup__save-button" type="submit">
-                    send
-                </button>
-            </form>
         </div>
     </div>
 
@@ -70,7 +51,10 @@
                 <div class="cover__text-container">
                     <p class="cover__description cover__description_name_before">hi, my name is</p>
                     <h1 class="cover__name">Sidenko Oleg</h1>
-                    <p class="cover__description cover__description_name_after">and i am 18 years old developer</p>
+                    <p class="cover__description cover__description_name_after">and i am
+                        <script>document.write(new Date().getFullYear() - 2006);</script>
+                        years old developer
+                    </p>
                     <div class="cover__button-container">
                         <a class="cover__main-button" href="#contact">
                             contact
@@ -81,7 +65,7 @@
                     </div>
                 </div>
                 <div class="cover__image-container">
-                    <img src="media/cover/main-image.webp" alt="No avatar:(" class="cover__image">
+                    <img alt="No avatar:(" class="cover__image" src="media/cover/main-image.webp">
                 </div>
             </section>
 
@@ -90,7 +74,7 @@
                 <h2 class="about__head">about:</h2>
                 <ul class="about__text">
                     <li>living in Moscow</li>
-                    <li>studying in MIPT HSSE 27’ (<b class="about__counter">test</b> days left)</li>
+                    <li>studying in MIPT HSSE ('23 - '27)</li>
                     <li>interested in backend developing</li>
                     <li>hobbies - games/music</li>
                 </ul>
@@ -164,7 +148,8 @@
                                 <br>
                                 stack: python, django, postgres, annoy
                                 <br>
-                                <a class="skills__link" href="https://github.com/h4x4d/UniChoose" target="_blank">github</a>
+                                <a class="skills__link" href="https://github.com/h4x4d/UniChoose"
+                                   target="_blank">github</a>
                             </p>
                         </li>
 
@@ -178,7 +163,8 @@
                                 <br>
                                 stack: python, vkwave/discordpy/aiogram, Pillow, grequests
                                 <br>
-                                <a class="skills__link" href="https://github.com/h4x4d/HearthstoneDeckViewDS" target="_blank">github</a>
+                                <a class="skills__link" href="https://github.com/h4x4d/HearthstoneDeckViewDS"
+                                   target="_blank">github</a>
                             </p>
                         </li>
 
@@ -207,7 +193,8 @@
                                 <br>
                                 stack: python, pyqt, sqlite
                                 <br>
-                                <a class="skills__link" href="https://github.com/h4x4d/DBrowser" target="_blank">github</a>
+                                <a class="skills__link" href="https://github.com/h4x4d/DBrowser"
+                                   target="_blank">github</a>
                             </p>
                         </li>
 
@@ -217,7 +204,8 @@
                             </label>
                             <p class="skills__description">
                                 i have many different project which you can check on my <a class="skills__link"
-                                                                                           href="https://github.com/h4x4d"  target="_blank">github</a>
+                                                                                           href="https://github.com/h4x4d"
+                                                                                           target="_blank">github</a>
                             </p>
                         </li>
                     </ul>
@@ -238,43 +226,37 @@
                     <h2 class="contact__head">contact:</h2>
                     <ul class="contact__list">
                         <li>
-                            <img alt="mail icon" src="media/contact/github.svg" class="contact__icon">
+                            <img alt="mail icon" class="contact__icon" src="media/contact/github.svg">
                             <a class="contact__link" href="https://github.com/h4x4d" target="_blank">github</a>
                         </li>
                         <li>
-                            <img alt="mail icon" src="media/contact/telegram.svg" class="contact__icon">
+                            <img alt="mail icon" class="contact__icon" src="media/contact/telegram.svg">
                             <a class="contact__link" href="https://t.me/h4x4d" target="_blank">telegram</a>
                         </li>
                         <li>
-                            <img alt="mail icon" src="media/contact/mail.svg" class="contact__icon contact__icon_hovering">
+                            <img alt="mail icon" class="contact__icon contact__icon_hovering"
+                                 src="media/contact/mail.svg">
                             <a class="contact__link" href="mailto:sidenkoleg@gmail.com" target="_blank">mail</a>
                         </li>
                     </ul>
                 </div>
-
-                <button class="contact__button">
-                    leave request
-                </button>
+                <form action="https://google.com" class="contact__resume">
+                    <input class="contact__button" type="submit" value="download resume">
+                </form>
             </div>
         </main>
 
-        <div class="notify">
-            <button class="notify__close-button" type="button"></button>
-            it was cookies alert, but i have no cookies:(
-        </div>
-
         <footer class="footer">
             <p class="footer__text">
-                © 2024 h4x4d
+                ©
+                <script>document.write(new Date().getFullYear());</script>
+                h4x4d
             </p>
         </footer>
     </div>
 </div>
 <script src="blocks/skills/__section/skills__section.js"></script>
 <script src="blocks/header/header.js"></script>
-<script src="blocks/about/about.js"></script>
 <script src="blocks/popup/popup.js"></script>
-<script src="blocks/contact-popup/contact-popup.js"></script>
-<script src="blocks/notify/notify.js" type="module"></script>
 </body>
 </html>

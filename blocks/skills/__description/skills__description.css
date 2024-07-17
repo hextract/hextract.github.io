@@ -5,6 +5,7 @@
 .skills__description::before {
     content: '/ ';
 }
+
 .skills__description::after {
     content: ' /';
 }
