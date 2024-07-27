@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button class="test__button">WTFFFF</button>
+
+<img alt="mail icon" id="image" src="">
+</body>
+
+<script>
+
+    document.querySelector('.test__button').addEventListener('click',
+        async function (event) {
+            let response = await fetch("http://ths-gallery.ru/?code=AAEBAf0EEIUX5dED9tYD2OwDne4DoIoE5bAEhLIEqd4El+8Eo5AF/cQFxscFhY4G95sG0Z4GDMABywTT7APW7AOogQSfkgTK3gTgwwXQ+AXWmAa0pwaiswYAAQPl0QP9xAXU6gP9xAXRngb9xAUAAA==")
+            let result = await response.blob()
+            const urlCreator = window.URL || window.webkitURL;
+
+            document.getElementById('image').src = urlCreator.createObjectURL(result);
+        }
+    )
+
+</script>
+</html>
