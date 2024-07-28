@@ -1,0 +1,30 @@
+@import url("../blocks/page/page.css");
+@import url("../blocks/page/_overflow/page_overflow_no.css");
+@import url("../blocks/root-container/root-container.css");
+
+@import url("../blocks/content/content.css");
+
+@import url("../blocks/code/code.css");
+
+@import url("../blocks/code/__input/code__input.css");
+@import url("../blocks/code/__input-container/code__input-container.css");
+@import url("../blocks/code/__button/code__button.css");
+@import url("../blocks/code/__title/code__title.css");
+@import url("../blocks/code/__main-container/code__main-container.css");
+@import url("../blocks/code/__links/code__links.css");
+@import url("../blocks/code/__link/code__link.css");
+@import url("../blocks/code/__image/code__image.css");
+@import url("../blocks/code/__support-text/code__support-text.css");
+
+@import url("../blocks/code/__alert/code__alert.css");
+@import url("../blocks/code/__alert/_type/code__alert_type_wait.css");
+@import url("../blocks/code/__alert/_type/code__alert_type_error.css");
+
+@import url("../blocks/about/about.css");
+@import url("../blocks/about/__text/about__text.css");
+@import url("../blocks/about/__head/about__head.css");
+
+@import url("../blocks/anchor/anchor.css");
+
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/__text/footer__text.css");

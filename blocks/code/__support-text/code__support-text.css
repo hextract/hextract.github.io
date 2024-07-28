@@ -1,0 +1,17 @@
+.code__support-text {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.code__support-link {
+    margin-top: 10px;
+
+    border-bottom: 1px solid #EAEAEA;
+    color: #EAEAEA;
+    text-decoration: none;
+}
+
+.code__support-link:hover {
+    cursor: pointer;
+}

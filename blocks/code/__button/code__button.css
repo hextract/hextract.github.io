@@ -1,0 +1,35 @@
+.code__button {
+    width: 25%;
+
+    height: 50px;
+
+    background: transparent;
+    color: #EAEAEA;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px 5px 5px 0px;
+    cursor: pointer;
+
+    font-size: 1.125rem;
+}
+
+.code__button:hover {
+    opacity: 0.8;
+}
+
+.code__button:disabled {
+    color: rgba(234, 234, 234, 0.3);
+    border: 1px solid rgba(234, 234, 234, 0.3);
+    cursor: default;
+}
+
+.code__button:disabled:hover {
+    opacity: 1;
+    cursor: default;
+}
+
+@media screen and (max-width: 650px) {
+    .code__button {
+        margin-top: 40px;
+        font-size: 0.875rem;
+    }
+}
