@@ -1,4 +1,4 @@
-const codeForm = document.querySelector('.code__input-container')
+const codeForm = document.querySelector('.code__form')
 const codeInput = document.querySelector('.code__input')
 const codeButton = document.querySelector('.code__button')
 const codeImage = document.querySelector('.code__image')

@@ -26,10 +26,3 @@
     opacity: 1;
     cursor: default;
 }
-
-@media screen and (max-width: 650px) {
-    .code__button {
-        margin-top: 40px;
-        font-size: 0.875rem;
-    }
-}

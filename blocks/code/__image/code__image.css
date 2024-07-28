@@ -5,11 +5,24 @@
     max-width: 70vw;
     max-height: 70vh;
 
-    margin-top: 10px;
-
     border-radius: 10px;
+
+    margin: 10px auto;
 }
 
 .code__image_not_shown {
     display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .code__image {
+        max-width: 90vw;
+        max-height: 70vh;
+    }
+}
+
+
+.code__image-container {
+    width: 100%;
+    display: flex;
 }
