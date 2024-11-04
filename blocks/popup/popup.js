@@ -8,9 +8,9 @@ let rightButton = document.querySelector('.popup__side-button_side_right');
 
 
 let imageList = [
+    'media/popup/3.jpg',
     'media/popup/1.jpg',
-    'media/popup/2.jpg',
-    'media/popup/3.jpg'
+    'media/popup/2.jpg'
 ]
 let currentImage = 0;
 
